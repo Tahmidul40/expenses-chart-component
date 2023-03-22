@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Expenses chart component</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- js file -->
+    <script type="module" src="./app/js/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Expenses chart</h1>
+
+      <section class="balance">
+        <h2 class="sr-only">Balance</h2>
+
+        <div class="balance__wrapper">
+          <h3 class="balance__title">
+            My balance <br />
+            <span class="balance__title-span">$921.48</span>
+          </h3>
+
+          <img
+            class="balance__img"
+            src="./images/logo.svg"
+            alt="Expenses chart logo"
+          />
+        </div>
+      </section>
+
+      <section class="chart">
+        <h2 class="chart__title">Spending - Last 7 days</h2>
+
+        <div class="chart__graph" id="chart"></div>
+
+        <hr class="chart__hr" />
+
+        <div class="chart__details">
+          <h3 class="chart__this-month">
+            Total this month <br />
+            <span class="chart__this-month-span">$478.33</span>
+          </h3>
+
+          <h4 class="chart__last-month">
+            <span class="chart__last-month-span">+2.4%</span> <br />
+            from last month
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="http://github.com/tahmidul40">Tahmidul</a>.
+    </footer>
+  </body>
+</html>
